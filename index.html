@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLACK ELITE: ropa, belleza, deporte y accesorios para teléfonos.">
+  <title>BLACK ELITE | Urban & Tech</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="BLACK ELITE, inicio">
+      <img src="img/logo-black-elite.jpeg" alt="Logotipo BLACK ELITE">
+      <span>BLACK <b>ELITE</b><small>URBAN & TECH</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="#ropa">Ropa</a>
+      <a href="#deporte">Deporte</a>
+      <a href="#belleza">Belleza</a>
+      <a href="#tecnologia">Accesorios para teléfono</a>
+      <a class="nav-contact" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">BLACK ELITE · URBAN & TECH</p>
+        <h1>Tu estilo.<br><span>Tus reglas.</span></h1>
+        <p>Ropa, belleza, deporte y accesorios para llevar tu estilo a otro nivel.</p>
+        <a class="btn" href="#ropa">EXPLORAR TIENDA</a>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <p class="eyebrow">BIENVENIDO A BLACK ELITE</p>
+      <h2>Encuentra lo que va contigo</h2>
+      <p>Descubre prendas y accesorios para tu día a día. Explora nuestras categorías y consulta disponibilidad por WhatsApp.</p>
+    </section>
+
+    <section class="section" id="ropa">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 · ESTILO DIARIO</p><h2>Ropa para todos</h2></div>
+        <p>Prendas para mujer y hombre.</p>
+      </div>
+      <div class="category-grid">
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Moda casual para mujer">
+          <div><h3>Ropa de mujer</h3><p>Looks casuales, prendas y básicos para combinar.</p><a href="#productos" data-filter="mujer" class="text-link">Ver productos →</a></div>
+        </article>
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1517677129300-07b130802f46?auto=format&fit=crop&w=900&q=85" alt="Moda casual para hombre">
+          <div><h3>Ropa de hombre</h3><p>Playeras, sudaderas y prendas para tu estilo.</p><a href="#productos" data-filter="hombre" class="text-link">Ver productos →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="deporte">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 · ACTITUD EN MOVIMIENTO</p><h2>Ropa deportiva</h2></div>
+        <p>Comodidad y estilo para mantenerte activo.</p>
+      </div>
+      <div class="category-grid">
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=85" alt="Ropa deportiva para mujer">
+          <div><h3>Deportiva mujer</h3><p>Conjuntos, leggings y prendas cómodas.</p><a href="#productos" data-filter="deportiva-mujer" class="text-link">Ver productos →</a></div>
+        </article>
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=85" alt="Entrenamiento y ropa deportiva para hombre">
+          <div><h3>Deportiva hombre</h3><p>Playeras, shorts y básicos para entrenar.</p><a href="#productos" data-filter="deportiva-hombre" class="text-link">Ver productos →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="belleza">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 · CUIDADO PERSONAL</p><h2>Belleza & cuidado</h2></div>
+        <p>Detalles para complementar tu rutina.</p>
+      </div>
+      <div class="category-grid beauty-grid">
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=85" alt="Productos de maquillaje">
+          <div><h3>Maquillaje</h3><p>Maquillaje y accesorios de belleza.</p><a href="#productos" data-filter="belleza" class="text-link">Ver productos →</a></div>
+        </article>
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85" alt="Cuidado personal">
+          <div><h3>Cuidado personal</h3><p>Productos para consentirte y completar tu estilo.</p><a href="#productos" data-filter="belleza" class="text-link">Ver productos →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="tecnologia">
+      <div class="section-heading">
+        <div><p class="eyebrow">04 · CONECTA CON TU ESTILO</p><h2>Accesorios para teléfono</h2></div>
+        <p>Complementos prácticos para tus dispositivos.</p>
+      </div>
+      <div class="category-grid tech-grid">
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=85" alt="Fundas para teléfonos">
+          <div><h3>Fundas</h3><p>Protección y estilo para tu celular.</p><a href="#productos" data-filter="telefonos" class="text-link">Ver productos →</a></div>
+        </article>
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Audífonos y accesorios tecnológicos">
+          <div><h3>Audio y accesorios</h3><p>Audífonos, soportes y complementos.</p><a href="#productos" data-filter="telefonos" class="text-link">Ver productos →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="section-heading">
+        <div><p class="eyebrow">CATÁLOGO</p><h2>Productos destacados</h2></div>
+        <p>Los productos y precios son ejemplos editables.</p>
+      </div>
+      <div class="filters" aria-label="Filtrar productos">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="mujer">Mujer</button>
+        <button class="filter" data-filter="hombre">Hombre</button>
+        <button class="filter" data-filter="deportiva-mujer">Deportiva mujer</button>
+        <button class="filter" data-filter="deportiva-hombre">Deportiva hombre</button>
+        <button class="filter" data-filter="belleza">Belleza</button>
+        <button class="filter" data-filter="telefonos">Teléfonos</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="mujer">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=85" alt="Prenda casual para mujer">
+          <div class="product-info"><span class="tag">ROPA · MUJER</span><h3>Prenda casual</h3><p class="price">$___ MXN</p><button class="buy-btn" data-product="Prenda casual">Consultar por WhatsApp</button></div>
+        </article>
+        <article class="product-card" data-category="hombre">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85" alt="Playera para hombre">
+          <div class="product-info"><span class="tag">ROPA · HOMBRE</span><h3>Playera básica</h3><p class="price">$___ MXN</p><button class="buy-btn" data-product="Playera básica">Consultar por WhatsApp</button></div>
+        </article>
+        <article class="product-card" data-category="deportiva-mujer">
+          <img src="https://images.unsplash.com/photo-1506629905607-d9a3d8b0b4c8?auto=format&fit=crop&w=700&q=85" alt="Ropa deportiva para mujer">
+          <div class="product-info"><span class="tag">DEPORTE · MUJER</span><h3>Conjunto deportivo</h3><p class="price">$___ MXN</p><button class="buy-btn" data-product="Conjunto deportivo para mujer">Consultar por WhatsApp</button></div>
+        </article>
+        <article class="product-card" data-category="deportiva-hombre">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=85" alt="Entrenamiento deportivo">
+          <div class="product-info"><span class="tag">DEPORTE · HOMBRE</span><h3>Playera deportiva</h3><p class="price">$___ MXN</p><button class="buy-btn" data-product="Playera deportiva para hombre">Consultar por WhatsApp</button></div>
+        </article>
+        <article class="product-card" data-category="belleza">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85" alt="Maquillaje">
+          <div class="product-info"><span class="tag">BELLEZA</span><h3>Set de maquillaje</h3><p class="price">$___ MXN</p><button class="buy-btn" data-product="Set de maquillaje">Consultar por WhatsApp</button></div>
+        </article>
+        <article class="product-card" data-category="telefonos">
+          <img src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=700&q=85" alt="Accesorio para celular">
+          <div class="product-info"><span class="tag">TECNOLOGÍA</span><h3>Accesorio para celular</h3><p class="price">$___ MXN</p><button class="buy-btn" data-product="Accesorio para celular">Consultar por WhatsApp</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <p class="eyebrow">¿BUSCAS ALGO?</p>
+      <h2>Hablemos de tu próximo estilo.</h2>
+      <p>Escríbenos para consultar disponibilidad, tallas, modelos y entregas.</p>
+      <a class="btn" id="contactButton" href="#">CONTACTAR POR WHATSAPP</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="footer-brand">BLACK ELITE</a>
+    <p>URBAN & TECH · DESTACA. SÉ DIFERENTE.</p>
+    <small>© <span id="year"></span> BLACK ELITE. Todos los derechos reservados.</small>
+  </footer>
+
+  <script src="funciones.js"></script>
+</body>
+</html>
