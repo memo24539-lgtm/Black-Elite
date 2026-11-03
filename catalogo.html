@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explora todos los productos de BLACK ELITE: ropa, deporte, belleza y tecnología.">
+
+    <title>Catálogo | BLACK ELITE</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .catalog-tools {
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .catalog-search {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid #263D32;
+            border-radius: 6px;
+            background: #FFFFFF;
+            font-family: inherit;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .catalog-search:focus {
+            box-shadow: 0 0 0 3px rgba(38, 61, 50, 0.15);
+        }
+
+        .catalog-count {
+            text-align: center;
+            color: #77776F;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .no-results {
+            text-align: center;
+            color: #77776F;
+            padding: 35px 10px;
+        }
+
+        .product-card[hidden] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <a href="index.html" class="brand">
+            <img src="img/logo-black-elite.jpeg" alt="Logo BLACK ELITE">
+
+            <span>
+                BLACK ELITE
+                <small>DESTACA. SÉ DIFERENTE.</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Abrir menú" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html">Inicio</a>
+            <a href="ropa.html">Ropa</a>
+            <a href="deporte.html">Deporte</a>
+            <a href="belleza.html">Belleza</a>
+            <a href="tecnologia.html">Tecnología</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PORTADA -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">BLACK ELITE COLLECTION</p>
+
+            <h1>ENCUENTRA TU ESTILO.</h1>
+
+            <p>
+                Explora nuestra colección completa.
+                Moda, deporte, belleza y tecnología en un solo lugar.
+            </p>
+
+            <a href="#productos" class="btn">
+                VER CATÁLOGO
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATÁLOGO -->
+    <section class="products-section" id="productos">
+
+        <h2 class="section-title">NUESTRO CATÁLOGO</h2>
+
+        <p class="section-description">
+            Encuentra tus productos favoritos y consulta
+            su disponibilidad directamente con nosotros.
+        </p>
+
+
+        <!-- BUSCADOR -->
+        <div class="catalog-tools">
+
+            <input
+                type="search"
+                id="searchProduct"
+                class="catalog-search"
+                placeholder="Buscar productos..."
+                aria-label="Buscar productos">
+
+            <!-- FILTROS -->
+            <div class="filters">
+
+                <button class="filter active" data-filter="todos">
+                    Todos
+                </button>
+
+                <button class="filter" data-filter="ropa">
+                    Ropa
+                </button>
+
+                <button class="filter" data-filter="deporte">
+                    Deporte
+                </button>
+
+                <button class="filter" data-filter="belleza">
+                    Belleza
+                </button>
+
+                <button class="filter" data-filter="tecnologia">
+                    Tecnología
+                </button>
+
+            </div>
+
+            <p class="catalog-count" id="resultCount" aria-live="polite">
+                Mostrando 12 productos
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCTOS -->
+        <div class="product-grid" id="catalogGrid">
+
+
+            <!-- ROPA -->
+            <article class="product-card" data-category="ropa">
+
+                <img
+                    src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=85"
+                    alt="Vestido casual">
+
+                <h3>Vestido casual</h3>
+
+                <p>Moda para mujer.</p>
+
+                <div class="product-price">$499 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Vestido casual - $499 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="ropa">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85"
+                    alt="Playera básica">
+
+                <h3>Playera básica</h3>
+
+                <p>Moda para hombre.</p>
+
+                <div class="product-price">$249 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Playera básica - $249 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="ropa">
+
+                <img
+                    src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=85"
+                    alt="Pantalón casual">
+
+                <h3>Pantalón casual</h3>
+
+                <p>Moda para mujer.</p>
+
+                <div class="product-price">$399 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Pantalón casual - $399 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <!-- DEPORTE -->
+            <article class="product-card" data-category="deporte">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=700&q=85"
+                    alt="Leggings deportivos">
+
+                <h3>Leggings deportivos</h3>
+
+                <p>Sport para mujer.</p>
+
+                <div class="product-price">$349 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Leggings deportivos - $349 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="deporte">
+
+                <img
+                    src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=700&q=85"
+                    alt="Playera deportiva">
+
+                <h3>Playera deportiva</h3>
+
+                <p>Sport para hombre.</p>
+
+                <div class="product-price">$299 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Playera deportiva - $299 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="deporte">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=700&q=85"
+                    alt="Top deportivo">
+
+                <h3>Top deportivo</h3>
+
+                <p>Sport para mujer.</p>
+
+                <div class="product-price">$279 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Top deportivo - $279 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <!-- BELLEZA -->
+            <article class="product-card" data-category="belleza">
+
+                <img
+                    src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=85"
+                    alt="Labial">
+
+                <h3>Labial</h3>
+
+                <p>Maquillaje.</p>
+
+                <div class="product-price">$149 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Labial - $149 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="belleza">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=85"
+                    alt="Set de brochas">
+
+                <h3>Set de brochas</h3>
+
+                <p>Accesorios de belleza.</p>
+
+                <div class="product-price">$249 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Set de brochas - $249 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="belleza">
+
+                <img
+                    src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=85"
+                    alt="Cuidado facial">
+
+                <h3>Set de cuidado facial</h3>
+
+                <p>Cuidado personal.</p>
+
+                <div class="product-price">$349 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Set de cuidado facial - $349 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <!-- TECNOLOGÍA -->
+            <article class="product-card" data-category="tecnologia">
+
+                <img
+                    src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=85"
+                    alt="Audífonos">
+
+                <h3>Audífonos</h3>
+
+                <p>Accesorios tecnológicos.</p>
+
+                <div class="product-price">$299 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Audífonos - $299 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="tecnologia">
+
+                <img
+                    src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=700&q=85"
+                    alt="Cargador">
+
+                <h3>Cargador para celular</h3>
+
+                <p>Accesorios para teléfono.</p>
+
+                <div class="product-price">$199 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Cargador para celular - $199 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+            <article class="product-card" data-category="tecnologia">
+
+                <img
+                    src="https://images.unsplash.com/photo-1603313011101-320f26a4f6f6?auto=format&fit=crop&w=700&q=85"
+                    alt="Funda para celular">
+
+                <h3>Funda para celular</h3>
+
+                <p>Protección y estilo.</p>
+
+                <div class="product-price">$149 MXN</div>
+
+                <button class="buy-btn"
+                    data-product="Funda para celular - $149 MXN">
+                    CONSULTAR POR WHATSAPP
+                </button>
+
+            </article>
+
+
+        </div>
+
+        <p class="no-results" id="noResults" hidden>
+            No encontramos productos con esa búsqueda.
+            Intenta con otro nombre o categoría.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section class="contact">
+
+        <h2>¿BUSCAS ALGO EN ESPECIAL?</h2>
+
+        <p>
+            Contáctanos para consultar nuestros productos,
+            precios y disponibilidad.
+        </p>
+
+        <a href="#" class="btn" id="contactButton">
+            CONTACTAR POR WHATSAPP
+        </a>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <p>
+            © <span id="year"></span> BLACK ELITE.
+            TODOS LOS DERECHOS RESERVADOS.
+        </p>
+
+        <p>DESTACA. SÉ DIFERENTE.</p>
+
+        <a href="index.html">Volver al inicio</a>
+
+    </footer>
+
+
+    <!-- FUNCIONES DEL CATÁLOGO -->
+    <script src="funciones.js"></script>
+
+    <script>
+        // BUSCADOR Y FILTROS DEL CATÁLOGO
+
+        const buscador = document.getElementById("searchProduct");
+        const botones = document.querySelectorAll(".filter");
+        const tarjetas = document.querySelectorAll("#catalogGrid .product-card");
+        const contador = document.getElementById("resultCount");
+        const mensajeVacio = document.getElementById("noResults");
+
+        let categoriaActual = "todos";
+
+        function actualizarCatalogo() {
+
+            const texto = buscador.value
+                .toLowerCase()
+                .trim();
+
+            let encontrados = 0;
+
+            tarjetas.forEach(tarjeta => {
+
+                const categoria = tarjeta.dataset.category;
+                const contenido = tarjeta.textContent.toLowerCase();
+
+                const coincideCategoria =
+                    categoriaActual === "todos" ||
+                    categoria === categoriaActual;
+
+                const coincideBusqueda =
+                    contenido.includes(texto);
+
+                const mostrar =
+                    coincideCategoria && coincideBusqueda;
+
+                tarjeta.hidden = !mostrar;
+
+                if (mostrar) {
+                    encontrados++;
+                }
+
+            });
+
+            contador.textContent =
+                `Mostrando ${encontrados} productos`;
+
+            mensajeVacio.hidden = encontrados !== 0;
+
+        }
+
+
+        // BUSCAR PRODUCTOS
+        buscador.addEventListener("input", actualizarCatalogo);
+
+
+        // FILTRAR CATEGORÍAS
+        botones.forEach(boton => {
+
+            boton.addEventListener("click", () => {
+
+                categoriaActual = boton.dataset.filter;
+
+                botones.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                boton.classList.add("active");
+
+                actualizarCatalogo();
+
+            });
+
+        });
+
+        actualizarCatalogo();
+
+    </script>
+
+</body>
+</html>

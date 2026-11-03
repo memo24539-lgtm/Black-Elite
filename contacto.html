@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | BLACK ELITE</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <a href="index.html" class="brand">
+            <img src="img/logo-black-elite.jpeg" alt="BLACK ELITE">
+            <span>BLACK ELITE</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+        <nav class="nav" id="navMenu">
+            <a href="index.html">Inicio</a>
+            <a href="ropa.html">Ropa</a>
+            <a href="deporte.html">Deporte</a>
+            <a href="belleza.html">Belleza</a>
+            <a href="tecnologia.html">Tecnología</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="hero">
+        <div class="hero-content">
+            <p>ESTAMOS PARA ATENDERTE</p>
+            <h1>HABLEMOS.</h1>
+            <p>Tu estilo, tus decisiones. En BLACK ELITE queremos ayudarte.</p>
+            <a href="#contact-info" class="btn">CONTÁCTANOS</a>
+        </div>
+    </section>
+
+    <!-- INFORMACIÓN DE CONTACTO -->
+    <section class="section contact" id="contact-info">
+        <p class="section-description">BLACK ELITE · ATENCIÓN AL CLIENTE</p>
+        <h2 class="section-title">¿CÓMO PODEMOS AYUDARTE?</h2>
+
+        <div class="category-grid">
+
+            <article class="category-card">
+                <h3>WHATSAPP</h3>
+                <p>Consulta precios, tallas, disponibilidad y realiza tus pedidos.</p>
+                <button class="btn" id="whatsappButton">
+                    ESCRÍBENOS
+                </button>
+            </article>
+
+            <article class="category-card">
+                <h3>PRODUCTOS</h3>
+                <p>¿Tienes dudas sobre algún artículo de nuestro catálogo?</p>
+                <a href="catalogo.html" class="btn">
+                    VER CATÁLOGO
+                </a>
+            </article>
+
+            <article class="category-card">
+                <h3>ATENCIÓN PERSONALIZADA</h3>
+                <p>Estamos disponibles para orientarte antes de realizar tu compra.</p>
+                <button class="btn" id="helpButton">
+                    SOLICITAR INFORMACIÓN
+                </button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- MENSAJE FINAL -->
+    <section class="section">
+        <h2 class="section-title">GRACIAS POR ELEGIR BLACK ELITE</h2>
+        <p class="section-description">
+            Destaca. Sé diferente. Encuentra tu estilo con nosotros.
+        </p>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>© <span id="year"></span> BLACK ELITE. Todos los derechos reservados.</p>
+        <p>DESTACA. SÉ DIFERENTE.</p>
+    </footer>
+
+    <script src="funciones.js"></script>
+
+    <script>
+        const whatsappButton = document.getElementById("whatsappButton");
+        const helpButton = document.getElementById("helpButton");
+
+        function contactar(mensaje) {
+            const numero = "527226155280";
+            const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+            window.open(enlace, "_blank");
+        }
+
+        whatsappButton.addEventListener("click", () => {
+            contactar("Hola, BLACK ELITE. Quisiera información sobre sus productos.");
+        });
+
+        helpButton.addEventListener("click", () => {
+            contactar("Hola, BLACK ELITE. Necesito atención personalizada.");
+        });
+    </script>
+
+</body>
+</html>
